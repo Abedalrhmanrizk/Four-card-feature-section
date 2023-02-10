@@ -82,9 +82,10 @@ body {
   font-size: 1.5rem;
   font-family: var(--main-font);
   display: grid;
-
+  background-color: var(--Very-Light-Gray);
   place-items: center;
-  color: var(--Very-Light-Gray);
+  color: var(--Very-Dark-Blue);
+  margin-top: 8rem;
 }
 
 header {
