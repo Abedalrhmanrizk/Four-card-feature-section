@@ -81,10 +81,11 @@ html {
 body {
   font-size: 1.5rem;
   font-family: var(--main-font);
-  display: grid;
+  /* display: grid; */
   background-color: var(--Very-Light-Gray);
-  place-content: center;
+  /* place-content: center; */
   color: var(--Very-Dark-Blue);
+  margin-top: 8rem;
 }
 
 header {
@@ -127,7 +128,6 @@ section .contaniner {
 }
 section .contaniner div {
   max-width: 350px;
-
   height: 250px;
   background-color: #fff;
   box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
@@ -159,6 +159,7 @@ section .contaniner {
   gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin: auto;
   /* align-items: center;
   justify-content: center; */
 }
