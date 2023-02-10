@@ -83,7 +83,7 @@ body {
   font-family: var(--main-font);
   display: grid;
   background-color: var(--Very-Light-Gray);
-  place-items: center;
+  place-content: center;
   color: var(--Very-Dark-Blue);
 }
 
