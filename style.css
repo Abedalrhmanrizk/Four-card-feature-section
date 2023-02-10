@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /* color */
+  --Red: #ea5353;
+  --Cyan: #45d3d3;
+  --Orange: #fcaf4a;
+  --Blue: #549ef2;
+  --Very-Dark-Blue: #4c4e61;
+  --Grayish-Blue: #a3a5ae;
+  --Very-Light-Gray: #fafafa;
+
+  /* fonts */
+  --main-font: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: var(--main-font);
+  display: grid;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  place-items: center;
+  color: var(--Very-Dark-Blue);
+}
+
+header {
+  max-width: 540px;
+  margin: auto;
+  color: var(--Very-Dark-Blue);
+  text-align: center;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 275;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 0.25px;
+  /* margin-bottom: ; */
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+
+  letter-spacing: 0.25px;
+  margin-bottom: 1.3rem;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+
+  letter-spacing: 0.104167px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 6.4rem;
+}
+
+section .contaniner div {
+  max-width: 350px;
+
+  height: 250px;
+  background-color: #fff;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+  padding: 3.2rem;
+  color: var(--Very-Dark-Blue);
+  /* border-top: 4px solid transparent; */
+  position: relative;
+  overflow: hidden;
+}
+
+section .contaniner div::before {
+  content: "";
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ea5353;
+}
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+section .contaniner {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* align-items: center;
+  justify-content: center; */
+}
+section .contaniner p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.0902778px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+section .contaniner div:first-child::before {
+  background-color: var(--Cyan);
+}
+section .contaniner div:nth-child(2)::before {
+  background-color: var(--Red);
+}
+section .contaniner div:nth-child(3)::before {
+  background-color: var(--Orange);
+}
+section .contaniner div:nth-child(4)::before {
+  background-color: var(--Blue);
+}
+
+section .contaniner div:first-child {
+  grid-area: 2/ 1 / 4/ 2;
+}
+section .contaniner div:nth-child(2) {
+  grid-area: 1/2/3/3;
+}
+section .contaniner div:nth-child(3) {
+  grid-area: 3/2/5/3;
+}
+section .contaniner div:nth-child(4) {
+  grid-area: 2/3/4/4;
+}
+
+section img {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  header .contaniner {
+    margin: 8.5rem 3.2rem 0 3.2rem;
+  }
+
+  section .contaniner {
+    margin: 0 3.2rem;
+  }
+  header {
+    max-width: 311px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.166667px;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.166667px;
+  }
+
+  header p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+
+    letter-spacing: 0.104167px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 7.6rem;
+  }
+
+  section .contaniner {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
